@@ -1,0 +1,14 @@
+<?php
+define('AnaDizin', __DIR__ ."/");
+require __DIR__ . '/vendor/autoload.php';
+
+use NovaPhp\Core\Bootstrap;
+use NovaPhp\Core\Console\CLI;
+
+$app = new Bootstrap(__DIR__);
+
+$cli = new CLI();
+
+$cli->run();
+
+$app->run();
