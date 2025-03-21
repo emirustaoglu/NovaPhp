@@ -10,7 +10,7 @@ return [
     | Birden fazla bağlantı arasından hangisinin kullanılacağını belirtir.
     |
     */
-    'default' => getEnv('DB_DEFAUTL', 'mysql'),
+    'default' => getConfig('DB_DEFAUTL', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -26,28 +26,28 @@ return [
     'connections' => [
         'mysql' => [
             // MySQL/MariaDB sürücüsü
-            'driver' => getEnv('DB_DRIVER', 'mysql'),
+            'driver' => getConfig('DB_DRIVER', 'mysql'),
 
             // Veritabanı sunucu adresi
-            'host' => getEnv('DB_HOST', 'localhost'),
+            'host' => getConfig('DB_HOST', 'localhost'),
 
             // Veritabanı port numarası
-            'port' => getEnv('DB_PORT', '3306'),
+            'port' => getConfig('DB_PORT', '3306'),
 
             // Veritabanı adı
-            'database' => getEnv('DB_NAME', 'novaphp'),
+            'database' => getConfig('DB_NAME', 'novaphp'),
 
             // Veritabanı kullanıcı adı
-            'username' => getEnv('DB_USER', 'root'),
+            'username' => getConfig('DB_USER', 'root'),
 
             // Veritabanı şifresi
-            'password' => getEnv('DB_PASS', ''),
+            'password' => getConfig('DB_PASS', ''),
 
             // Karakter seti
-            'charset' => getEnv('DB_CHARSET', 'utf8mb4'),
+            'charset' => getConfig('DB_CHARSET', 'utf8mb4'),
 
             // Karakter karşılaştırma ayarı
-            'collation' => getEnv('DB_COLLATION', 'utf8mb4_unicode_ci'),
+            'collation' => getConfig('DB_COLLATION', 'utf8mb4_unicode_ci'),
 
             // Bakım modu - true ise bağlantılar reddedilir
             'maintanceMode' => false

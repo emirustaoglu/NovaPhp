@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     'APP_NAME' => 'NovaPhp',
     'APP_ENV' => 'local',
     'APP_DEBUG' => true,
@@ -30,4 +30,4 @@ return array(
     'EMAIL_SMTP_PASS' => 'pass',
     'EMAIL_SMTP_ENCRYPTION' => 'ssl',
     'EMAIL_SMTP_TIMEOUT' => 5
-);
+];

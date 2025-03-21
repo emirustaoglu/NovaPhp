@@ -10,7 +10,7 @@ return [
     | Desteklenen sürücüler: "smtp", "sendmail", "mailgun", "ses", "log", "array"
     |
     */
-    'default' => getEnv('EMAIL_DEFAULT', 'smtp'),
+    'default' => getConfig('EMAIL_DEFAULT', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,26 +32,26 @@ return [
     'mailers' => [
         'smtp' => [
             // Mail sunucu adresi
-            'host' => getEnv('EMAIL_SMTP_HOST', 'smtp.example.com'),
+            'host' => getConfig('EMAIL_SMTP_HOST', 'smtp.example.com'),
 
             // Mail sunucu port numarası
             // Gmail: 465, Yandex: 587, Outlook: 587
-            'port' => getEnv('EMAIL_SMTP_PORT', 465),
+            'port' => getConfig('EMAIL_SMTP_PORT', 465),
 
             // Şifreleme türü: tls, ssl, null
-            'encryption' => getEnv('EMAIL_SMTP_ENCRYPTION', 'ssl'),
+            'encryption' => getConfig('EMAIL_SMTP_ENCRYPTION', 'ssl'),
 
             // Mail sunucu kullanıcı adı
-            'username' => getEnv('EMAIL_SMTP_USER', 'example@example.com'),
+            'username' => getConfig('EMAIL_SMTP_USER', 'example@example.com'),
 
             // Mail sunucu şifresi
-            'password' => getEnv('EMAIL_SMTP_PASS', 'pass'),
+            'password' => getConfig('EMAIL_SMTP_PASS', 'pass'),
 
             // Bağlantı zaman aşımı (saniye)
-            'timeout' => getEnv('EMAIL_SMTP_TIMEOUT', 5),
+            'timeout' => getConfig('EMAIL_SMTP_TIMEOUT', 5),
 
             // Debug modu (1 = hataları göster, 0 = gizle)
-            'debug' => getEnv('APP_DEBUG', false),
+            'debug' => getConfig('APP_DEBUG', false),
         ],
 
         'sendmail' => [

@@ -10,7 +10,7 @@ return [
     | Örneğin: mail gönderimlerinde, sayfa başlıklarında vb.
     |
     */
-    'name' => getEnv('APP_NAME', 'NovaPhp'),
+    'name' => getConfig('APP_NAME', 'NovaPhp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -21,7 +21,7 @@ return [
     | Değerler: 'local', 'staging', 'production'
     |
     */
-    'env' => getEnv('APP_ENV', 'local'),
+    'env' => getConfig('APP_ENV', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -32,7 +32,7 @@ return [
     | Production ortamında kapalı tutulmalıdır.
     |
     */
-    'debug' => getEnv('APP_DEBUG', false),
+    'debug' => getConfig('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -43,7 +43,7 @@ return [
     | URL oluşturmada kullanılır.
     |
     */
-    'url' => getEnv('APP_URL', 'https://novaphp.test'),
+    'url' => getConfig('APP_URL', 'https://novaphp.test'),
 
     /*
     |--------------------------------------------------------------------------
@@ -68,7 +68,7 @@ return [
     | Liste: http://php.net/manual/en/timezones.php
     |
     */
-    'timezone' => getEnv('APP_TIMEZONE', 'Europe/Istanbul'),
+    'timezone' => getConfig('APP_TIMEZONE', 'Europe/Istanbul'),
 
     /*
     |--------------------------------------------------------------------------
@@ -79,7 +79,7 @@ return [
     | Örnek değerler: 'en', 'tr', 'fr', 'de'
     |
     */
-    'locale' => getEnv('APP_LOCAL', 'tr'),
+    'locale' => getConfig('APP_LOCAL', 'tr'),
 
     /*
     |--------------------------------------------------------------------------
@@ -89,7 +89,7 @@ return [
     | Seçilen dilde çeviri bulunamazsa kullanılacak yedek dil.
     |
     */
-    'fallback_locale' => getEnv('APP_FALLBACK_LOCALE', 'tr'),
+    'fallback_locale' => getConfig('APP_FALLBACK_LOCALE', 'tr'),
 
     /*
     |--------------------------------------------------------------------------
@@ -100,7 +100,7 @@ return [
     | En az 32 karakter uzunluğunda olmalıdır.
     |
     */
-    'key' => getEnv('APP_KEY', ''),
+    'key' => getConfig('APP_KEY', ''),
 
     /*
     |--------------------------------------------------------------------------

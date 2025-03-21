@@ -3,7 +3,7 @@
   "type": "project",
   "homepage": "https://github.com/emirustaoglu",
   "description": "NovaPhp Framework",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license" : "MIT",
   "autoload": {
     "psr-4": {
@@ -21,6 +21,6 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=8.3.0",
-    "novaphp/core": "^0.0.1"
+    "novaphp/core": "^0.0.2"
   }
 }
