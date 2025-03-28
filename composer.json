@@ -2,13 +2,21 @@
   "name": "novaphp/novaphp",
   "type": "project",
   "homepage": "https://github.com/emirustaoglu",
-  "description": "NovaPhp Framework",
-  "version": "0.0.2",
-  "license" : "MIT",
+  "description": "NovaPhp Basic Framework",
+  "version": "1.0.0",
+  "license": "MIT",
   "autoload": {
     "psr-4": {
-      "App\\": "app/"
-    }
+      "App\\": "app/",
+      "Core\\": "core/"
+    },
+    "files": [
+      "./core/Helpers.php"
+    ]
+  },
+  "extra": {
+    "release_date": "2025-03-28",
+    "build_date": "2025-03-28T14:30:00Z"
   },
   "authors": [
     {
@@ -20,7 +28,20 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": ">=8.3.0",
-    "novaphp/core": "^0.0.2"
+    "php": "^8.3.0",
+    "ext-pdo": "*",
+    "ext-zip": "*",
+    "ext-curl": "*",
+    "novaphp/config": "^1.0.0",
+    "izniburak/router": "^3.0",
+    "jenssegers/blade": "^2.0",
+    "illuminate/view": "11.7.0",
+    "vlucas/valitron": "^1.4",
+    "filp/whoops": "^2.15",
+    "arrilot/dotenv-php": "^2.0",
+    "illuminate/database": "^11.44",
+    "doctrine/dbal": "^4.2",
+    "symfony/mailer": "^7.2",
+    "symfony/http-client": "^7.2"
   }
 }

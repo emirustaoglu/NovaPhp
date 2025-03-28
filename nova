@@ -1,14 +1,15 @@
 <?php
-define('AnaDizin', __DIR__ ."/");
-require __DIR__ . '/vendor/autoload.php';
+define('BasePath', __DIR__ . "/");
+require BasePath . '/vendor/autoload.php';
 
-use NovaPhp\Core\Bootstrap;
-use NovaPhp\Core\Console\CLI;
+use App\Console\CLI;
+use Core\Bootstrap;
 
-$app = new Bootstrap(__DIR__);
+
+$app = new Bootstrap();
 
 $cli = new CLI();
 
 $cli->run();
 
-$app->run();
+require BasePath . "routes/web.php";

@@ -12,13 +12,15 @@
     <p class="text-gray-600 mt-4">A lightweight and flexible PHP framework.</p>
 
     <div class="mt-6">
-        <a href="https://github.com/emirustaoglu/novaphpcore" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
+        <a href="https://github.com/emirustaoglu/novaphpcore" target="_blank"
+           class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">
             Read Documentation
         </a>
     </div>
 
     <footer class="mt-10 text-gray-500">
         &copy; 2025 NovaPHP v{{ novaVersion() }} PHP v{{ PHP_VERSION }}
+        <br><small>Build Date: {{ novaBuildDate()  }}</small>
     </footer>
 </div>
 </body>

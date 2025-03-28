@@ -1,5 +1,8 @@
 <?php
-
+//include  __DIR__ . "/../core\Helpers.php";
+if (!function_exists('getConfig')) {
+    die('getConfig fonksiyonu bulunamadı!');
+}
 return [
     /*
     |--------------------------------------------------------------------------
@@ -111,12 +114,13 @@ return [
     |
     */
     'paths' => [
-        'controllers' => AnaDizin . 'app/controllers/',
-        'middlewares' => AnaDizin . 'app/middlewares/',
-        'enums' => AnaDizin . 'app/enums/',
-        'models' => AnaDizin . 'app/models/',
-        'views' => AnaDizin . 'resources/views/',
-        'views_cache' => AnaDizin . 'storage/app/cache/',
+        'controllers' => BasePath . 'app/Controllers/',
+        'middlewares' => BasePath . 'app/Middlewares/',
+        'enums' => BasePath . 'app/Enums/',
+        'models' => BasePath . 'app/Models/',
+        'repository' => BasePath . 'app/Repositories/',
+        'views' => BasePath . 'resources/views/',
+        'views_cache' => BasePath . 'storage/app/cache/',
     ],
 
     /*
@@ -132,7 +136,8 @@ return [
         'controllers' => 'App\\Controllers',
         'middlewares' => 'App\\Middlewares',
         'enums' => 'App\\Enums',
-        'models' => 'App\\Models'
+        'models' => 'App\\Models',
+        'repository' => 'App\\Repositories',
     ]
 
 ];
