@@ -2,6 +2,7 @@
 
 namespace Core;
 
+use Arrilot\DotEnv\DotEnv;
 use Buki\Router\Router;
 use NovaPhp\Config\ConfigLoader;
 use Valitron\Validator;
@@ -20,6 +21,8 @@ class Bootstrap
         if (defined("BasePath")) {
             $this->basePath = BasePath;
         }
+
+        DotEnv::load($this->basePath . ".env.php");
 
         ConfigLoader::getInstance()->addConfigPath(__DIR__ . "/../config");
 
